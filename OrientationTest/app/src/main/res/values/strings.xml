@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">OrientationTest</string>
+    <string name="Info1">→ We can fix android screen orientation by specifying Screen Orientation in manifest file, but it is not recommended.</string>
+    <string name="Info2">→ We can get callback when screen orientation changes by specifying it in manifest file inside main activity tag android:configChanges=\"orientation|screenSize\" . and get a call back on onConfigurationChanged(Configuration newConfig).</string>
+</resources>

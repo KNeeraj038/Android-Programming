@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Button_Click</string>
+    <string name="btn_1">First Button</string>
+    <string name="btn_2">Second Button</string>
+    <string name="btn_3">Listner Implementated Btn</string>
+    <string name="btn_3_info">we are implementing onClickListner and setting onClickListner and waiting for Click event</string>
+
+</resources>

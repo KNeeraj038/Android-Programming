@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarAlwaysDrawHorizontalTrack="true"
+    android:scrollbars="vertical"
+    tools:context=".MainActivity"
+    >
+
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="352dp"
+            android:layout_height="444dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Android Activity Life Cycle"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="48dp"
+                tools:layout_editor_absoluteY="141dp" />
+
+            <TextView
+                android:id="@+id/textViewStartFresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="1. First Start : onCreate() → onStart() → onResume()." />
+
+            <TextView
+                android:id="@+id/textViewMinimize"
+                android:layout_width="321dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="2. Minimizing : onStart() → onStop()." />
+
+            <TextView
+                android:id="@+id/textViewMaximize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="3. Maximizing/Resuming : onRestart() → onStart() → onResume()." />
+
+            <TextView
+                android:id="@+id/textViewOrientation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="4. Orientation change : onStart() → onStop() → onDestroy() → onCreate() → onStart() → onResume()." />
+
+            <TextView
+                android:id="@+id/textViewBackBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="5. Back button : onStart() → onStop() → onDestroy()" />
+
+
+            <TextView
+                android:id="@+id/textViewStartAftBackBtn"
+                android:layout_width="321dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="6. Start after pressing back button: Similar to First start i.e, onCreate() → onStart() → onResume()." />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
